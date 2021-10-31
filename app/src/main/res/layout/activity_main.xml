@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#252627"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="268dp"
+            android:layout_height="157dp"
+            android:layout_marginTop="30dp"
+            android:rotation="-1"
+            android:src="@drawable/l1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:text="Email"
+            android:textColor="#e1e5ec"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/SEmail"
+            android:layout_width="370dp"
+            android:layout_height="55dp"
+            android:background="@drawable/radius"
+            android:hint="dark@souls"
+            android:textAlignment="center"
+            android:textColor="#4d525b"
+            android:textSize="18sp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:text="Password"
+            android:textColor="#e1e5ec"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+
+        <EditText
+            android:id="@+id/SPassword"
+            android:layout_width="370dp"
+            android:layout_height="55dp"
+            android:background="@drawable/radius"
+            android:textColor="#4d525b"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_margin="40dp"
+            android:background="@drawable/radius"
+            android:text="Sign In"
+            android:textColor="#979797"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Register"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_margin="40dp"
+            android:background="@drawable/buttonradius"
+            android:text="Register"
+            android:textColor="#e1e5ec"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:indeterminate="true"
+            android:max="100"
+            android:padding="20dp"
+            android:progress="50" /><!--true value for indeterminate-->
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
